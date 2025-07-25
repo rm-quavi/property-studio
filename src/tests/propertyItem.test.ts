@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/vue'
+import { render } from '@testing-library/vue'
 import { describe, it, expect } from 'vitest'
 import PropertyItem from '../components/property/PropertyItem.vue'
 import { createMemoryHistory, createRouter } from 'vue-router'

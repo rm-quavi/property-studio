@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, onBeforeUnmount, computed } from 'vue';
+import { onMounted, onBeforeUnmount } from 'vue';
 import { useRoute, useRouter } from 'vue-router'
 import { usePropertyStore } from '@/stores/property'
 import { Pencil, Trash2 } from 'lucide-vue-next'

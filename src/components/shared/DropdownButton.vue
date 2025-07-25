@@ -25,8 +25,8 @@ const handleItemClick = (item: string) => {
     </button>
     <div v-if="isOpen" class="absolute right-0 top-0 mt-10 z-10">
       <ul class="mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
-        <li v-for="(item, index) in items" :key="index" class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-light"
-          @click="handleItemClick(item)">{{ item }}</li>
+        <li v-for="(item, index) in props.items" :key="index"
+          class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-light" @click="handleItemClick(item)">{{ item }}</li>
       </ul>
     </div>
   </div>
