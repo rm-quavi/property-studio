@@ -50,12 +50,12 @@ const deleteProperty = async () => {
         <p>{{ property.description }}</p>
 
         <div class="mt-4">
-          <RouterLink class="rounded border py-1 px-3 inline-block border-blue-500 text-blue-500"
+          <RouterLink class="rounded border py-1 px-3 inline-block border-primary text-primary"
             :to="`/property/${property.id}/edit`">
             <Pencil class="inline h-4 w-4 mr-2" />
             <span class="text-sm">Edit</span>
           </RouterLink>
-          <button class="rounded border py-1 px-3 mt-2 ml-4 inline-block border-red-400 text-red-400 cursor-pointer"
+          <button class="rounded border py-1 px-3 mt-2 ml-4 inline-block border-red-500 text-red-500 cursor-pointer"
             @click="deleteProperty()">
             <Trash2 class="inline h-4 w-4 mr-2" />
             <span class="text-sm">Delete</span>
